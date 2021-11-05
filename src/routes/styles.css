@@ -1,0 +1,81 @@
+.loaderContainer {
+  height: 60vh;
+  width: 100vw;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.loader {
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+
+/* Safari */
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.myChart {
+  width: 100%;
+  max-width: 600px;
+}
+
+.capturedImage {
+  border-radius: 100%;
+}
+
+.croppedImage {
+  width: 100vw;
+  border-radius: 100%;
+}
+.filter {
+  margin-bottom: 10px;
+}
+@media screen and (min-width: 600px) {
+  .croppedImage {
+    width: 50vw;
+  }
+  .filterContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  .filter {
+    margin-right: 100px;
+    margin-bottom: 10px;
+  }
+  .filter label {
+    width: 200px;
+  }
+}
+main {
+  padding: 0px 10px;
+}
+input {
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+}
+button {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 10px;
+  margin: 10px;
+}

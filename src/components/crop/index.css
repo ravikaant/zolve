@@ -1,0 +1,35 @@
+.cropContainer {
+  width: 90vw;
+  height: 50vh;
+  position: relative;
+  background: #fff;
+  padding: 20px;
+  border-radius: 20px;
+}
+
+@media screen and (min-width: 600px) {
+  .cropContainer {
+    height: 50vh;
+    width: 50vw;
+    padding: 0px
+  }
+}
+
+.retakeButton, .doneButton {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border-radius: 100%;
+  border: 1px solid black;
+  cursor: pointer;
+  bottom: 0;
+}
+
+.doneButton {
+  right: 0;
+}
+
+.reactEasyCrop_Container, .reactEasyCrop_Contain, .reactEasyCrop_CropArea {
+  border-radius: 20px;
+}
