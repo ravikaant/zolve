@@ -11,7 +11,8 @@ ReactDOM.render(
   <BrowserRouter>
     <App />
     <Routes>
-      <Route path="/Graph" element={<Graph />} />
+      <Route path="/" element={<Graph />} />
+      <Route path="/graph" element={<Graph />} />
       <Route path="media" element={<Media />} />
       <Route path="clipboard" element={<Clipboard />} />
     </Routes>

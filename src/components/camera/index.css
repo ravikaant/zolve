@@ -26,6 +26,14 @@ video {
   }
 }
 
+@media screen and (max-width: 600px) {
+  .captureButton {
+    width: 20px;
+    height: 20px;
+    bottom: 40px;
+  }
+}
+
 .innerCapture {
   height: 100%;
   width: 100%;
