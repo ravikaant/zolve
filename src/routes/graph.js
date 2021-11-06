@@ -15,6 +15,7 @@ export default function Graph() {
   const [toDate, setToDate] = useState('2021-07-09');
   const [page, setPage] = useState(1);
   const [pageSize, setPageSize] = useState(30);
+  console.log(window.screen)
 
   const fetchData = useCallback(() => {
     setLoading(true);
@@ -62,8 +63,9 @@ export default function Graph() {
             },
           ],
         }}
-        height={100}
+        height={window.screen.width < 600 ? 500 : 100}
         options={{
+          indexAxis: window.screen.width < 600 ? 'y' : 'x',
           maintainAspectRatio: true,
           scales: {
             yAxes: [
